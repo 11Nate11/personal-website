@@ -1,8 +1,8 @@
 import './style.css'
 
-import * as THREE from './three.module'
-import { FontLoader } from "./FontLoader";
-import { TextGeometry } from "./TextGeometry";
+import * as THREE from './three.module.js'
+import { FontLoader } from "./FontLoader.js";
+import { TextGeometry } from "./TextGeometry.js";
 //import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 //scene
