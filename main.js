@@ -3,7 +3,7 @@ import './style.css'
 import * as THREE from 'three';
 import { FontLoader } from "three/examples/jsm/loaders/FontLoader.js";
 import { TextGeometry } from "three/examples/jsm/geometries/TextGeometry.js";
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+//import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 //scene
 const scene = new THREE.Scene();
@@ -20,7 +20,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.shadowMap.enabled = true;
 
 //controls
-const controls = new OrbitControls(camera, renderer.domElement);
+//const controls = new OrbitControls(camera, renderer.domElement);
 
 //window resize
 
@@ -151,7 +151,7 @@ scene.add(plight);
 //animate
 function animate() {
   requestAnimationFrame(animate);
-  controls.update();
+  //controls.update();
 
   scene.getObjectByName("linkedin").rotation.y -= 0.01;
   scene.getObjectByName("resume").rotation.y -= 0.01;
