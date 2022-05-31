@@ -1,7 +1,12 @@
+//import threejs libraries
 import * as THREE from 'three';
 import { FontLoader } from 'three/examples/jsm/loaders/FontLoader';
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry';
 //import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+
+import socialcirclefont from './Social Media Circled_Regular.json?url';
+import resumepdf from './Nathan Castro Resume.pdf?url';
+import projectsjpg from './projectssection.jpg?url';
 
 //scene
 const scene = new THREE.Scene();
@@ -32,7 +37,7 @@ function onWindowResize() {
 
 //text-shapes
 const loader = new FontLoader();
-const font = loader.load('./fonts/Social Media Circled_Regular.json',
+const font = loader.load(socialcirclefont,
   function (font) {
     const geometry1 = new TextGeometry('C', {
       font: font,
@@ -101,7 +106,7 @@ const font = loader.load('./fonts/Social Media Circled_Regular.json',
     resume.geometry.center();
     resume.castShadow = true;
     resume.name = "resume";
-    resume.userData = { URL: "./Nathan Castro Resume.pdf" };
+    resume.userData = { URL: resumepdf };
     //youtube.position.y = 7;
     youtube.position.x = -4;
     youtube.geometry.center();
@@ -113,7 +118,7 @@ const font = loader.load('./fonts/Social Media Circled_Regular.json',
     projects.geometry.center();
     projects.castShadow = true;
     projects.name = "projects";
-    projects.userData = { URL: "./projectssection.jpg" };
+    projects.userData = { URL: projectsjpg };
     //twitter.position.y = 7;
     twitter.position.x = 12;
     twitter.geometry.center();
