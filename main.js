@@ -1,6 +1,6 @@
 import * as THREE from 'three';
-import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js';
-import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js';
+import { FontLoader } from 'three/examples/jsm/loaders/FontLoader';
+import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry';
 //import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 //scene
@@ -101,7 +101,7 @@ const font = loader.load('./fonts/Social Media Circled_Regular.json',
     resume.geometry.center();
     resume.castShadow = true;
     resume.name = "resume";
-    resume.userData = { URL: "Nathan Castro Resume.pdf" };
+    resume.userData = { URL: "./Nathan Castro Resume.pdf" };
     //youtube.position.y = 7;
     youtube.position.x = -4;
     youtube.geometry.center();
@@ -113,7 +113,7 @@ const font = loader.load('./fonts/Social Media Circled_Regular.json',
     projects.geometry.center();
     projects.castShadow = true;
     projects.name = "projects";
-    projects.userData = { URL: "projectssection.jpg" };
+    projects.userData = { URL: "./projectssection.jpg" };
     //twitter.position.y = 7;
     twitter.position.x = 12;
     twitter.geometry.center();
