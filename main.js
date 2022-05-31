@@ -1,6 +1,6 @@
-import * as THREE from './three.module.js'
-import { FontLoader } from "./FontLoader.js";
-import { TextGeometry } from "./TextGeometry.js";
+import * as THREE from 'three';
+import { FontLoader } from 'FontLoader';
+import { TextGeometry } from 'TextGeometry';
 //import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 //scene
